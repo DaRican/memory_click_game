@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "image": "../images/yankee01.jpg"
+  },
+  {
+    "id": 2,
+    "image": "../images/yankee02.jpg"
+  },
+  {
+    "id": 3,
+    "image": "../images/yankee03.jpg"
+  },
+  {
+    "id": 4,
+    "image": "../images/yankee04.jpg"
+  },
+  {
+    "id": 5,
+    "image": "../images/yankee05.jpg"
+  },
+  {
+    "id": 6,
+    "image": "../images/yankee06.jpg"
+  },
+  {
+    "id": 7,
+    "image": "../images/yankee07.jpg"
+  },
+  {
+    "id": 8,
+    "image": "../images/yankee08.jpg"
+  },
+  {
+    "id": 9,
+    "image": "../images/yankee09.jpg"
+  },
+  {
+    "id": 10,
+    "image": "../images/yankee10.jpg"
+  },
+  {
+    "id": 11,
+    "image": "../images/yankee11.jpg"
+  },
+  {
+    "id": 12,
+    "image": "../images/yankee12.jpg"
+  }
+]
