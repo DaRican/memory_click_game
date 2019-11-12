@@ -10,7 +10,7 @@ function Jumbotron(props) {
         <hr class="my-2" />
         <p class="lead">Choose a Yankee but don't repeat choice</p>
         <p>
-          <span>Your Score: {props.score} | Top Score: {props.highScore} | {props.jumbotronPrompt}</span>
+          <span>Current Score: {props.score} | High Score: {props.highScore} | {props.jumbotronPrompt}</span>
         </p>
 
       </div>

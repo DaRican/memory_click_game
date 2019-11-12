@@ -14,6 +14,13 @@ class App extends Component {
     jumbotronPrompt: "Begin by clicking a Yankee"
   };
 
+  arrayRearange = () => {
+    for (let i = this.state.players.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [this.state.players[i], this.state.players[j]] = [this.state.players[j], this.state.players[i]];
+    }
+    this.setState({ players });
+
   playerSelect = id => {
 
     const yankeeClick = this.state.nonSelectPlayers.find(item => item.id === id);
@@ -30,23 +37,18 @@ class App extends Component {
  
       const newPlayers = this.state.nonSelectPlayers.filter(item => item.id !== id);            
       this.setState({ 
-        jumbotronPrompt: "Nope Try again",
+        jumbotronPrompt: "Don't Select a Player Twice",
           score: this.state.score + 1,
           players: players,
           nonSelectPlayers: newPlayers
       });
     }
-    this.shuffleArray();
+    this.arrayRearange();
   }
   
 
  
-  shuffleArray = () => {
-    for (let i = this.state.players.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [this.state.players[i], this.state.players[j]] = [this.state.players[j], this.state.players[i]];
-    }
-    this.setState({ players });
+ 
 }
 
   render() {
