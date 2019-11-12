@@ -14,12 +14,7 @@ class App extends Component {
     jumbotronPrompt: "Begin by clicking a Yankee"
   };
 
-  arrayRearange = () => {
-    for (let i = this.state.players.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [this.state.players[i], this.state.players[j]] = [this.state.players[j], this.state.players[i]];
-    }
-    this.setState({ players });
+  
 
   playerSelect = id => {
 
@@ -45,6 +40,12 @@ class App extends Component {
     }
     this.arrayRearange();
   }
+  arrayRearange = () => {
+    for (let i = this.state.players.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [this.state.players[i], this.state.players[j]] = [this.state.players[j], this.state.players[i]];
+    }
+    this.setState({ players });
   
 
  
