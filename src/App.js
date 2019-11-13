@@ -60,10 +60,10 @@ class App extends Component {
         jumbotronPrompt={this.state.jumbotronPrompt}
         highScore={this.state.highScore} />
 
-        {this.state.players.map(car => (
+        {this.state.players.map(player => (
           <PlayerCard
-            id={players.id}
-            image={players.image}
+            id={player.id}
+            image={player.image}
             playerSelect={this.playerSelect}
           />
         ))}
