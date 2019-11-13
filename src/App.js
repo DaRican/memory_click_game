@@ -62,8 +62,8 @@ class App extends Component {
 
         {this.state.players.map(car => (
           <PlayerCard
-            id={car.id}
-            image={car.image}
+            id={player.id}
+            image={player.image}
             playerSelect={this.playerSelect}
           />
         ))}
